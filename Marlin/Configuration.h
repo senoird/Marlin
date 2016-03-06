@@ -1,4 +1,4 @@
-#ifndef CONFIGURATION_H
+﻿#ifndef CONFIGURATION_H
 #define CONFIGURATION_H
 
 #include "boards.h"
@@ -105,8 +105,8 @@
 // 110 is Pt100 with 1k pullup (non standard)
 
 #define TEMP_SENSOR_0 6
-#define TEMP_SENSOR_1 0
-#define TEMP_SENSOR_2 0
+//#define TEMP_SENSOR_1 0
+//#define TEMP_SENSOR_2 0
 #define TEMP_SENSOR_BED 6
 
 // This makes temp sensor 1 a redundant sensor for sensor 0. If the temperatures difference between these sensors is to high the print will be aborted.
@@ -372,8 +372,8 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
 
     // set the rectangle in which to probe
     #define LEFT_PROBE_BED_POSITION 60
-    #define RIGHT_PROBE_BED_POSITION 150
-    #define BACK_PROBE_BED_POSITION 150
+    #define RIGHT_PROBE_BED_POSITION 170
+    #define BACK_PROBE_BED_POSITION 170
     #define FRONT_PROBE_BED_POSITION 60
 
      // set the number of grid points per dimension
@@ -397,9 +397,9 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
 
   // these are the offsets to the probe relative to the extruder tip (Hotend - Probe)
   // X and Y offsets must be integers
-  #define X_PROBE_OFFSET_FROM_EXTRUDER -50
-  #define Y_PROBE_OFFSET_FROM_EXTRUDER 0
-  #define Z_PROBE_OFFSET_FROM_EXTRUDER -.4
+  #define X_PROBE_OFFSET_FROM_EXTRUDER 35
+  #define Y_PROBE_OFFSET_FROM_EXTRUDER 10
+  #define Z_PROBE_OFFSET_FROM_EXTRUDER -1.5
 
   #define Z_RAISE_BEFORE_HOMING 4       // (in mm) Raise Z before homing (G28) for Probe Clearance.
                                         // Be sure you have this distance over your Z_MAX_POS in case
